@@ -1,1 +1,22 @@
+#include <iostream>
+using namespace std;
 
+int main() {
+   int inValue;
+   int biggestVal;
+   int i;
+   
+   cin >> biggestVal;
+   
+   for (i = 0; i < 5 ; ++i){
+      cin >> inValue;
+      if( inValue > biggestVal){
+         biggestVal = inValue;
+      
+      }
+   }
+   
+   cout << biggestVal << endl;
+
+   return 0;
+}
