@@ -1,0 +1,28 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+   string codeStr;
+   int strIndex;
+	int lengthStr;
+   
+   cin >> codeStr;
+   strIndex = 0;
+	lengthStr = 0;
+
+   for (int i = 0; i < codeStr.length() - 2; ++i) {
+        if (codeStr.substr(i, 3) == "abc") {
+            codeStr.replace(i, 3, ""); 
+            
+        }
+    }
+
+    // Assign lengthStr with the length of codeStr
+    lengthStr = codeStr.length();
+
+   cout << "Remaining string: " << codeStr << endl;
+	cout << "Length: " << lengthStr << endl;
+   
+   return 0;
+}
