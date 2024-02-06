@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+   string password;
+   unsigned int i;
+   
+   getline(cin, password);
+
+   for (i = 0; i < password.length(); ++i){
+      cin >> password;
+      if (!isalpha(password.at(i)) && !isdigit(password.at(i))){
+         password.at(i) = 'x';
+         
+      }
+      
+
+  
+         
+   }  
+      
+         
+         
+
+   cout << "Valid password: " << password << endl;
+   
+   return 0;
+}
