@@ -1,0 +1,28 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+   int numInput;
+   double inputValue;
+   double largestVal;
+   int i;
+
+   cin >> numInput;
+   cin >> largestVal;
+   cout << "Value read: " << largestVal << endl;
+   
+   for ( i = 0; i < numInput; ++i){
+      cin >> inputValue;
+      cout << "Value read: " << inputValue << endl;
+      if ( inputValue > largestVal){
+         largestVal = inputValue;
+      }
+   }
+   
+   cout << "Largest: " << largestVal << endl;
+      
+   /* Your code goes here */
+
+   return 0;
+}
