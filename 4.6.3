@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   int numInput;
+   bool matchesCond = true;
+   
+   cin >> numInput;
+  
+   for (int i = 0; i < numInput; ++i){
+      int inputValue;
+      cin >> inputValue;
+      if (inputValue != 1){
+         matchesCond = false;
+      }
+   }
+   /* Your code goes here */
+
+   if (matchesCond) {
+      cout << "All match 1" << endl;
+   }
+   else {
+      cout << "Has non-matching value(s)" << endl;
+   }
+
+   return 0;
+}
